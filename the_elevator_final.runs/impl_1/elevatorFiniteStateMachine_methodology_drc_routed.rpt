@@ -1,0 +1,513 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Dec 24 17:06:17 2018
+| Host         : DESKTOP-LGKRQU6 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file elevatorFiniteStateMachine_methodology_drc_routed.rpt -pb elevatorFiniteStateMachine_methodology_drc_routed.pb -rpx elevatorFiniteStateMachine_methodology_drc_routed.rpx
+| Design       : elevatorFiniteStateMachine
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 95
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 37         |
+| TIMING-18 | Warning  | Missing input or output delay | 32         |
+| TIMING-20 | Warning  | Non-clocked latch             | 25         |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell scene/isScenarioRunning/scenarioRunning_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) scene/isScenarioRunning/scenarioRunning_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line63/newSegmentShifted_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line63/newSegmentShifted_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin nolabel_line63/newSegmentShifted_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin scene/currentTimeState_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin scene/currentTimeState_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin scene/currentTimeState_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin scene/currentTimeState_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin scene/elevator_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin scene/elevator_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin scene/elevator_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor1Passengers_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor1Passengers_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor1Passengers_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor1Passengers_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor2Passengers_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor2Passengers_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor2Passengers_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor2Passengers_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor3Passengers_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor3Passengers_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor3Passengers_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin scene/floor3Passengers_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin segmentShifted_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin segmentShifted_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin segmentShifted_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment1Number_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment1Number_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment1Number_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment1Number_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment2Number_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment2Number_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment2Number_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment2Number_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment3Number_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment3Number_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment3Number_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Warning
+Non-clocked sequential cell  
+The clock pin timeCount/segment3Number_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on keyb_col[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on keyb_col[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on keyb_col[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on keyb_col[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on DS relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on OE relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on SH_CP relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on ST_CP relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on a relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on an[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on an[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on an[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on an[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on b relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on c relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on col_select[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on col_select[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on col_select[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on col_select[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on col_select[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on col_select[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on col_select[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on col_select[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on d relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on e relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on f relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on g relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on keyb_row[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on keyb_row[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on keyb_row[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on keyb_row[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on reset_out relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch scene/floor1Controller/decrementer/newFloorPassenger_reg[0] cannot be properly analyzed as its control pin scene/floor1Controller/decrementer/newFloorPassenger_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch scene/floor1Controller/decrementer/newFloorPassenger_reg[1] cannot be properly analyzed as its control pin scene/floor1Controller/decrementer/newFloorPassenger_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch scene/floor1Controller/decrementer/newFloorPassenger_reg[2] cannot be properly analyzed as its control pin scene/floor1Controller/decrementer/newFloorPassenger_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch scene/floor1Controller/decrementer/newFloorPassenger_reg[3] cannot be properly analyzed as its control pin scene/floor1Controller/decrementer/newFloorPassenger_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch scene/floor1Controller/incrementer/newFloorPassenger_reg[0] cannot be properly analyzed as its control pin scene/floor1Controller/incrementer/newFloorPassenger_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch scene/floor1Controller/incrementer/newFloorPassenger_reg[1] cannot be properly analyzed as its control pin scene/floor1Controller/incrementer/newFloorPassenger_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch scene/floor1Controller/incrementer/newFloorPassenger_reg[2] cannot be properly analyzed as its control pin scene/floor1Controller/incrementer/newFloorPassenger_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch scene/floor1Controller/incrementer/newFloorPassenger_reg[3] cannot be properly analyzed as its control pin scene/floor1Controller/incrementer/newFloorPassenger_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch scene/floor2Controller/decrementer/newFloorPassenger_reg[0] cannot be properly analyzed as its control pin scene/floor2Controller/decrementer/newFloorPassenger_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch scene/floor2Controller/decrementer/newFloorPassenger_reg[1] cannot be properly analyzed as its control pin scene/floor2Controller/decrementer/newFloorPassenger_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch scene/floor2Controller/decrementer/newFloorPassenger_reg[2] cannot be properly analyzed as its control pin scene/floor2Controller/decrementer/newFloorPassenger_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch scene/floor2Controller/decrementer/newFloorPassenger_reg[3] cannot be properly analyzed as its control pin scene/floor2Controller/decrementer/newFloorPassenger_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch scene/floor2Controller/incrementer/newFloorPassenger_reg[0] cannot be properly analyzed as its control pin scene/floor2Controller/incrementer/newFloorPassenger_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch scene/floor2Controller/incrementer/newFloorPassenger_reg[1] cannot be properly analyzed as its control pin scene/floor2Controller/incrementer/newFloorPassenger_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch scene/floor2Controller/incrementer/newFloorPassenger_reg[2] cannot be properly analyzed as its control pin scene/floor2Controller/incrementer/newFloorPassenger_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch scene/floor2Controller/incrementer/newFloorPassenger_reg[3] cannot be properly analyzed as its control pin scene/floor2Controller/incrementer/newFloorPassenger_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch scene/floor3Controller/decrementer/newFloorPassenger_reg[0] cannot be properly analyzed as its control pin scene/floor3Controller/decrementer/newFloorPassenger_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch scene/floor3Controller/decrementer/newFloorPassenger_reg[1] cannot be properly analyzed as its control pin scene/floor3Controller/decrementer/newFloorPassenger_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch scene/floor3Controller/decrementer/newFloorPassenger_reg[2] cannot be properly analyzed as its control pin scene/floor3Controller/decrementer/newFloorPassenger_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch scene/floor3Controller/decrementer/newFloorPassenger_reg[3] cannot be properly analyzed as its control pin scene/floor3Controller/decrementer/newFloorPassenger_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch scene/floor3Controller/incrementer/newFloorPassenger_reg[0] cannot be properly analyzed as its control pin scene/floor3Controller/incrementer/newFloorPassenger_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch scene/floor3Controller/incrementer/newFloorPassenger_reg[1] cannot be properly analyzed as its control pin scene/floor3Controller/incrementer/newFloorPassenger_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch scene/floor3Controller/incrementer/newFloorPassenger_reg[2] cannot be properly analyzed as its control pin scene/floor3Controller/incrementer/newFloorPassenger_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch scene/floor3Controller/incrementer/newFloorPassenger_reg[3] cannot be properly analyzed as its control pin scene/floor3Controller/incrementer/newFloorPassenger_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch scene/isScenarioRunning/scenarioRunning_reg cannot be properly analyzed as its control pin scene/isScenarioRunning/scenarioRunning_reg/G is not reached by a timing clock
+Related violations: <none>
+
+

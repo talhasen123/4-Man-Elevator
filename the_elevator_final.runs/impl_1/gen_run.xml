@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1545660315">
+  <File Type="BITSTR-BMM" Name="elevatorFiniteStateMachine_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="elevatorFiniteStateMachine_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="elevatorFiniteStateMachine_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="elevatorFiniteStateMachine_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="elevatorFiniteStateMachine.tcl"/>
+  <File Type="OPT-TIMING" Name="elevatorFiniteStateMachine_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="elevatorFiniteStateMachine_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="elevatorFiniteStateMachine_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="elevatorFiniteStateMachine_reports.tcl"/>
+  <File Type="OPT-DRC" Name="elevatorFiniteStateMachine_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="elevatorFiniteStateMachine.hwdef"/>
+  <File Type="PWROPT-DCP" Name="elevatorFiniteStateMachine_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="elevatorFiniteStateMachine_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="elevatorFiniteStateMachine_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="elevatorFiniteStateMachine_placed.dcp"/>
+  <File Type="PLACE-IO" Name="elevatorFiniteStateMachine_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="elevatorFiniteStateMachine_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="elevatorFiniteStateMachine_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="elevatorFiniteStateMachine_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="elevatorFiniteStateMachine_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="elevatorFiniteStateMachine_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="elevatorFiniteStateMachine_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="elevatorFiniteStateMachine.bgn"/>
+  <File Type="PLACE-TIMING" Name="elevatorFiniteStateMachine_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="elevatorFiniteStateMachine_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="elevatorFiniteStateMachine.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="elevatorFiniteStateMachine_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="elevatorFiniteStateMachine_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="elevatorFiniteStateMachine_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="elevatorFiniteStateMachine.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="elevatorFiniteStateMachine_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="elevatorFiniteStateMachine_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="elevatorFiniteStateMachine_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="elevatorFiniteStateMachine_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="elevatorFiniteStateMachine_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="elevatorFiniteStateMachine_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="elevatorFiniteStateMachine.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="elevatorFiniteStateMachine_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="elevatorFiniteStateMachine.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="elevatorFiniteStateMachine_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="elevatorFiniteStateMachine_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="elevatorFiniteStateMachine.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="elevatorFiniteStateMachine_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="elevatorFiniteStateMachine_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="elevatorFiniteStateMachine_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="elevatorFiniteStateMachine_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="elevatorFiniteStateMachine_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="elevatorFiniteStateMachine_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="elevatorFiniteStateMachine_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="elevatorFiniteStateMachine_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="elevatorFiniteStateMachine_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="elevatorFiniteStateMachine_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="elevatorFiniteStateMachine_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="elevatorFiniteStateMachine_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="elevatorFiniteStateMachine_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="elevatorFiniteStateMachine_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="elevatorFiniteStateMachine_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="elevatorFiniteStateMachine_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="elevatorFiniteStateMachine_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="elevatorFiniteStateMachine_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="elevatorFiniteStateMachine_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="elevatorFiniteStateMachine.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="elevatorFiniteStateMachine_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="elevatorFiniteStateMachine.rbt"/>
+  <File Type="BITSTR-NKY" Name="elevatorFiniteStateMachine.nky"/>
+  <File Type="BG-DRC" Name="elevatorFiniteStateMachine.drc"/>
+  <File Type="RDI-RDI" Name="elevatorFiniteStateMachine.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Desktop/Assignments/Year 2/SevSeg_4digit.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/Assignments/Year 2/display_8X8.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Desktop/Assignments/Year 2/keypad4X4.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/elevatorFiniteStateMachine.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="elevatorFiniteStateMachine"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/basys3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

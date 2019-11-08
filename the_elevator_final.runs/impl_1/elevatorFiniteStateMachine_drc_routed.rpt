@@ -1,0 +1,123 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Dec 24 17:06:16 2018
+| Host         : DESKTOP-LGKRQU6 running 64-bit major release  (build 9200)
+| Command      : report_drc -file elevatorFiniteStateMachine_drc_routed.rpt -pb elevatorFiniteStateMachine_drc_routed.pb -rpx elevatorFiniteStateMachine_drc_routed.rpx
+| Design       : elevatorFiniteStateMachine
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 12
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 9          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net counterTimeDivider/CLK is a gated clock net sourced by a combinational pin counterTimeDivider/segment1Number[3]_i_3/O, cell counterTimeDivider/segment1Number[3]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net scene/isScenarioRunning/E[0] is a gated clock net sourced by a combinational pin scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__2/O, cell scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net scene/isScenarioRunning/floor1Passengers_reg[3][0] is a gated clock net sourced by a combinational pin scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2/O, cell scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net scene/isScenarioRunning/floor1Passengers_reg[3]_0[0] is a gated clock net sourced by a combinational pin scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__4/O, cell scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net scene/isScenarioRunning/floor2Passengers_reg[3]_0[0] is a gated clock net sourced by a combinational pin scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__1/O, cell scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net scene/isScenarioRunning/floor3Passengers_reg[3]_0[0] is a gated clock net sourced by a combinational pin scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__0/O, cell scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net scene/isScenarioRunning/floor3Passengers_reg[3]_1[0] is a gated clock net sourced by a combinational pin scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__3/O, cell scene/isScenarioRunning/newFloorPassenger_reg[3]_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net scene/isScenarioRunning/scenarioRunning_reg_i_1_n_0 is a gated clock net sourced by a combinational pin scene/isScenarioRunning/scenarioRunning_reg_i_1/O, cell scene/isScenarioRunning/scenarioRunning_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net shiftClock/clk_shift is a gated clock net sourced by a combinational pin shiftClock/newSegmentShifted[2]_i_2/O, cell shiftClock/newSegmentShifted[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT counterTimeDivider/segment1Number[3]_i_3 is driving clock pin of 12 cells. This could lead to large hold time violations. First few involved cells are:
+    timeCount/segment1Number_reg[0] {FDRE}
+    timeCount/segment1Number_reg[1] {FDRE}
+    timeCount/segment1Number_reg[2] {FDRE}
+    timeCount/segment1Number_reg[3] {FDRE}
+    timeCount/segment2Number_reg[0] {FDRE}
+    timeCount/segment2Number_reg[1] {FDRE}
+    timeCount/segment2Number_reg[2] {FDRE}
+    timeCount/segment2Number_reg[3] {FDRE}
+    timeCount/segment3Number_reg[0] {FDRE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT shiftClock/newSegmentShifted[2]_i_2 is driving clock pin of 6 cells. This could lead to large hold time violations. First few involved cells are:
+    nolabel_line63/newSegmentShifted_reg[0] {FDRE}
+    nolabel_line63/newSegmentShifted_reg[1] {FDRE}
+    nolabel_line63/newSegmentShifted_reg[2] {FDRE}
+    segmentShifted_reg[0] {FDRE}
+    segmentShifted_reg[1] {FDRE}
+    segmentShifted_reg[2] {FDRE}
+
+Related violations: <none>
+
+

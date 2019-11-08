@@ -1,0 +1,93 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Dec 24 17:05:55 2018
+| Host         : DESKTOP-LGKRQU6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file elevatorFiniteStateMachine_control_sets_placed.rpt
+| Design       : elevatorFiniteStateMachine
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      6 |            1 |
+|      8 |           10 |
+|     10 |            1 |
+|     12 |            2 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             184 |           31 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             138 |           22 |
+| Yes          | No                    | No                     |              84 |           13 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             170 |           25 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------------+-----------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|                      Clock Signal                     |                 Enable Signal                 |                   Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++-------------------------------------------------------+-----------------------------------------------+-----------------------------------------------------+------------------+----------------+
+|  scene/isScenarioRunning/scenarioRunning_reg_i_1_n_0  |                                               | scene/isScenarioRunning/scenarioRunning_reg_i_2_n_0 |                1 |              2 |
+|  scene/clockDivider/CLK                               |                                               |                                                     |                2 |              6 |
+|  scene/isScenarioRunning/floor1Passengers_reg[3][0]   |                                               |                                                     |                1 |              8 |
+|  scene/isScenarioRunning/E[0]                         |                                               |                                                     |                1 |              8 |
+|  scene/isScenarioRunning/floor1Passengers_reg[3]_0[0] |                                               |                                                     |                2 |              8 |
+|  scene/isScenarioRunning/floor2Passengers_reg[3]_0[0] |                                               |                                                     |                1 |              8 |
+|  scene/isScenarioRunning/floor3Passengers_reg[3]_0[0] |                                               |                                                     |                1 |              8 |
+|  scene/isScenarioRunning/floor3Passengers_reg[3]_1[0] |                                               |                                                     |                1 |              8 |
+|  clk_in_IBUF_BUFG                                     | keypad4X4_inst0/FSM_onehot_row[4]_i_1_n_0     |                                                     |                1 |              8 |
+|  counterTimeDivider/CLK                               | scene/isScenarioRunning/segment1Number_reg[0] | timeCount/segment1Number[3]_i_1_n_0                 |                1 |              8 |
+|  counterTimeDivider/CLK                               | timeCount/segment2Number[3]                   | timeCount/segment2Number[3]_i_1_n_0                 |                1 |              8 |
+|  counterTimeDivider/CLK                               | timeCount/segment3Number[3]_i_1_n_0           | timeCount/segment1Number[3]_i_1_n_0                 |                1 |              8 |
+|  clk_in_IBUF_BUFG                                     | display_8x8_0/bit_sent_count[4]_i_1_n_0       |                                                     |                2 |             10 |
+|  clk_in_IBUF_BUFG                                     | keypad4X4_inst0/count_deb                     | keypad4X4_inst0/count_deb[5]_i_1_n_0                |                2 |             12 |
+|  shiftClock/clk_shift                                 |                                               |                                                     |                3 |             12 |
+|  clk_in_IBUF_BUFG                                     | keypad4X4_inst0/clk_en2                       |                                                     |                4 |             18 |
+|  clk_in_IBUF_BUFG                                     | display_8x8_0/clk_en_slow                     | display_8x8_0/op_count[9]_i_1_n_0                   |                5 |             20 |
+|  scene/clockDivider/CLK                               |                                               | systemReset_IBUF                                    |                7 |             32 |
+|  clk_in_IBUF_BUFG                                     | display_8x8_0/color_data[0]_i_1_n_0           |                                                     |                6 |             48 |
+|  clk_in_IBUF_BUFG                                     |                                               | shiftClock/count[0]_i_1__0_n_0                      |                7 |             50 |
+|  clk_in_IBUF_BUFG                                     |                                               | counterTimeDivider/clear                            |                7 |             54 |
+|  clk_in_IBUF_BUFG                                     | scene/isScenarioRunning/count2_reg[0]         | scene/clockDivider/count2[0]_i_1_n_0                |                7 |             56 |
+|  clk_in_IBUF_BUFG                                     | scene/isScenarioRunning/count1                | scene/clockDivider/count1[0]_i_1_n_0                |                8 |             58 |
+|  clk_in_IBUF_BUFG                                     |                                               |                                                     |               19 |            118 |
++-------------------------------------------------------+-----------------------------------------------+-----------------------------------------------------+------------------+----------------+
+
+
